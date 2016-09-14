@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/second"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部导航 -->
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/headbg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/citybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/null_btn_text"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/city_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_down"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_s"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- 头部右边 -->
+
+        <LinearLayout
+            android:id="@+id/top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:contentDescription="@string/system_image_search"
+                android:focusable="true"
+                android:padding="10dp"
+                android:src="@drawable/search_head" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 子菜单选项 -->
+
+        <LinearLayout
+            android:id="@+id/layout_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/section1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/shop_list_section_discount"
+                    android:textColor="@color/textcolor_normal"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/mark1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/section1"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/section_bg_normal" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#dddddd" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/section2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/shop_list_section_type"
+                    android:textColor="@color/textcolor_normal"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/mark2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/section2"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/section_bg_normal" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#dddddd" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/section3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/shop_list_section_service"
+                    android:textColor="@color/textcolor_normal"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/mark3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/section3"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/section_bg_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="0.4dp"
+    android:background="#dddddd"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+            <com.watch.customer.xlistview.XListView
+                android:id="@+id/shoplist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.watch.customer.xlistview.XListView>
+        
+    </RelativeLayout>
+
+</LinearLayout>

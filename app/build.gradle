@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'overseakey'
+            keyPassword 'overseaantilost'
+            storeFile file('/oversea.keystore')
+            storePassword 'overseaantilost'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.uacent.watchapp"
+        minSdkVersion 19
+        targetSdkVersion 23
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            buildConfigField "String", "oversea", "\"0\""
+        }
+        oversea {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            buildConfigField "String", "oversea", "\"1\""
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+android.buildTypes.all {
+    buildConfigField "String", "PASSWORD_SALT", "\"ggggukggg\""
+    buildConfigField "String", "PASSWORD_ENC_SECRET", "\"sggggxxyyyzzzzgggeee213,2355\""
+    buildConfigField "String", "PASSWORD_PREFERENCE_KEY", "\"passwordkey\""
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+}
+
+dependencies {
+    compile files('libs/alipay.jar')
+    compile files('libs/httpcore-4.3.3.jar')
+    compile files('libs/httpmime-4.3.6.jar')
+    //compile files('libs/jpush-sdk-release1.7.1.jar')
+    compile files('libs/universal-image-loader-1.5.6-with-src.jar')
+    compile files('libs/baidumapapi_base_v3_7_1.jar')
+    compile files('libs/baidumapapi_cloud_v3_7_1.jar')
+    compile files('libs/baidumapapi_map_v3_7_1.jar')
+    compile files('libs/baidumapapi_radar_v3_7_1.jar')
+    compile files('libs/baidumapapi_search_v3_7_1.jar')
+    compile files('libs/baidumapapi_util_v3_7_1.jar')
+    compile files('libs/locSDK_6.13.jar')
+    compile 'com.android.support:support-v4:23.1.0'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+}

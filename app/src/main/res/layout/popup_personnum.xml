@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <!-- <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_press">
+    <TextView
+        android:id="@+id/cancel" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:textSize="16sp"
+         android:background="@drawable/null_btn_text"
+        android:text="@string/system_cancel"
+        android:textColor="@color/text_blue"
+        />
+    <TextView
+         android:id="@+id/sure"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:background="@drawable/null_btn_text"
+         android:textColor="@color/text_blue"
+        android:text="@string/system_sure"/>
+    </RelativeLayout>
+
+ -->
+
+        <ListView
+            android:id="@+id/personnum_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#a6a4a4"
+            android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/headbg">
+        
+         <ImageView
+                android:id="@+id/back"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/arrow_left"
+	            android:background="@drawable/null_btn_text"
+	            android:padding="10dp"/>
+        
+        <TextView 
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            style="@style/text_head"
+            android:layout_weight="1"/>
+        
+        <Button
+            android:id="@+id/showlinepop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/text_white"
+            android:text="@string/shop_map_search_route"
+	        android:background="@drawable/null_btn_text"
+            android:contentDescription="@string/system_image_setting"/>
+    </LinearLayout>
+    
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	
+	    <com.baidu.mapapi.map.MapView
+		    android:id="@+id/map"  
+		    android:layout_width="match_parent"  
+		    android:layout_height="match_parent"  
+		    android:clickable="true" />
+	     <LinearLayout
+	        android:id="@+id/linedetaillin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:layout_marginBottom="10dip" 
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/pre"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/pre_"
+                android:onClick="nodeClick" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/next_"
+                android:onClick="nodeClick" />
+        </LinearLayout>
+
+	</RelativeLayout>
+</LinearLayout>

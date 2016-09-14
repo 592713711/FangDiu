@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:showDividers="beginning">
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/device_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textgroup"
+        android:layout_width="match_parent"
+        android:layout_weight="1.7"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="test"
+            />
+
+        <TextView
+            android:id="@+id/device_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:text="test"
+            />
+        </LinearLayout>
+
+    <com.watch.customer.ui.MyButton
+        android:id="@+id/device_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="2.1"
+        android:text="connect"
+        android:background="@drawable/shape"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="2.5"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/device_click_arrow" />
+
+    </LinearLayout>

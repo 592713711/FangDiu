@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/second"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部导航 -->
+
+         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/headbg" >
+
+         <ImageView
+                android:id="@+id/back"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/back_selector"
+	            android:background="@drawable/null_btn_text"
+	            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/category_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/footbg" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/search" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/system_image_search" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/category_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_blue" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/text_white"
+            android:orientation="vertical" >
+
+<TextView
+                android:id="@+id/category_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:text="@string/shop_menu_main"
+                android:textColor="@color/TextColorBlack"/>
+            <ListView
+                android:id="@+id/menu_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout 
+     android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/footbg"
+            android:layout_margin="2dp"
+            >
+        <LinearLayout 
+     android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+    <TextView
+        android:id="@+id/count_num" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+        android:text="@string/shop_menu_show2"/>
+        <TextView
+            android:id="@+id/count_sum" 
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        android:textSize="16sp"/>
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/submit"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_gravity="right"
+            android:textColor="@color/text_white"
+            android:textSize="16sp"
+            android:background="@drawable/blue_btn_text"
+            android:text="@string/shop_menu_submit"/>
+</LinearLayout>
+</LinearLayout>

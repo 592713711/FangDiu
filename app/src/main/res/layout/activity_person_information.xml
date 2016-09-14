@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headbg" >
+        
+       <ImageView
+                android:id="@+id/back"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/back_selector"
+	            android:padding="10dp"
+	            android:background="@drawable/null_btn_text"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/person_information_text_title"
+            android:layout_marginRight="50dp"
+            style="@style/text_head"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/personinformationPhoto" 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+        
+        <TextView 
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="@string/person_information_text_photo"
+            android:textSize="@dimen/text_size"
+            android:gravity="center_vertical"/>
+        
+        <LinearLayout 
+            android:id="@+id/personinformationImagePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical">
+            
+            <ImageView 
+                android:id="@+id/headimage"
+	            android:layout_width="65dp"
+	            android:layout_height="650dp"
+	            android:src="@drawable/null_user"
+	            android:contentDescription="@string/person_main_image_information"/>
+        
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/arrow_right"
+	            android:contentDescription="@string/person_main_image_information"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+	
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#dddddd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    
+    <LinearLayout
+        android:id="@+id/personinformationTelephone" 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp" >
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/person_information_text_telephone"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:layout_weight="1"/>
+        
+        <TextView
+             android:id="@+id/text_phone" 
+	         android:layout_width="wrap_content"
+	         android:layout_height="match_parent"
+             android:textSize="@dimen/text_size"
+	         android:gravity="center_vertical"/>
+    </LinearLayout>
+	
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#dddddd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    
+    <LinearLayout
+        android:id="@+id/personinformationName" 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp" >
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/person_information_text_name"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:layout_weight="1"/>
+        
+        <TextView
+             android:id="@+id/text_name" 
+	         android:layout_width="wrap_content"
+	         android:layout_height="match_parent"
+	         android:gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+	         android:drawableRight="@drawable/arrow_right"/>
+    </LinearLayout>
+	
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#dddddd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    
+    <LinearLayout
+        android:id="@+id/personinformationSex" 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp">
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/person_information_text_sex"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size"
+            android:layout_weight="1"/>
+        
+        <TextView
+             android:id="@+id/text_sex" 
+	         android:layout_width="wrap_content"
+	         android:layout_height="match_parent"
+	         android:gravity="center_vertical"
+             android:textSize="@dimen/text_size"
+	         android:drawableRight="@drawable/arrow_right"/>
+    </LinearLayout>
+	
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#dddddd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    
+    <LinearLayout
+        android:id="@+id/personinformationPassword" 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp">
+        
+        <TextView 
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="@string/person_information_text_password"
+            android:textSize="@dimen/text_size"
+            android:gravity="center_vertical"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end">
+            
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/arrow_right"
+	            android:contentDescription="@string/person_main_image_information"/>
+        </LinearLayout>
+    </LinearLayout>
+       <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#dddddd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/personmainLogout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="@string/person_main_image_logout"
+            android:textSize="@dimen/text_size"
+            android:gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right"
+                android:contentDescription="@string/person_main_image_logout"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#dddddd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>

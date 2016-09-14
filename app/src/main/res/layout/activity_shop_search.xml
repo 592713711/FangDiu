@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/headbg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:clickable="true"
+            android:singleLine="true"
+            android:hint="@string/shop_search_edit_hint" />
+
+        <ImageButton
+            android:id="@+id/seachbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/null_btn_text"
+            android:src="@drawable/search_head" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/search_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/cleanrecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/delete"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shop_search_button_clear"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

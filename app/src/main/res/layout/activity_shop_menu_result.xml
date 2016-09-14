@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+	
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/headbg" >
+
+         <ImageView
+                android:id="@+id/back"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/back_selector"
+	            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/orderlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/save_head" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/order_detail_order_number"
+            android:textColor="#FF0000"
+            android:gravity="center"/>
+        
+        <TextView 
+            android:id="@+id/order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FF0000"
+            android:gravity="center"/>
+         <TextView 
+            android:id="@+id/orderdetailstatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_blue"
+            android:text="@string/order_success"
+            android:gravity="right|center_vertical"/>
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/border_gray"/>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/deepgrey"
+        android:text="@string/order_detail_order_msg"/>/
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/border_gray"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        
+       <TextView 
+           android:id="@+id/datetv"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:gravity="center"/>
+       
+       <TextView 
+           android:id="@+id/timetv"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="right|center_vertical"/>
+        
+    </LinearLayout>
+         <TextView 
+           android:id="@+id/personnumtv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="10dp"
+           android:paddingBottom="10dp"/>
+    
+    
+
+ <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/deepgrey"
+        android:text="@string/order_detail_order_phone"/>
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+  <TextView
+      android:id="@+id/phonetv" 
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/deepgrey"/>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/text_blue"
+        android:text="@string/order_detail_order_checksuc"/>
+	<LinearLayout
+	    android:id="@+id/orderdetailPayBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/menuresult_mylist"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/text_white"
+            android:text="@string/order_detail_order_mylist"
+            android:background="@drawable/blue_btn_text"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        
+        <Button
+            android:id="@+id/menuresult_comment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/text_white"
+            android:text="@string/order_detail_order_comment"
+            android:background="@drawable/blue_btn_text"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        
+        
+    </LinearLayout>
+    
+    
+</LinearLayout>

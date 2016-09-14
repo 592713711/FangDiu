@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/device_icon"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/tv_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-03-24 18:20:20"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:layout_alignParentBottom="false"
+            android:layout_alignBottom="@+id/iv_icon"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+<TextView
+    android:id="@+id/tv_longlat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="location: 112.23, 30.23"
+    android:textSize="16sp"
+    android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="广东省深圳市"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

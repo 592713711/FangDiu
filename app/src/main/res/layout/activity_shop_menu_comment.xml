@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headbg" >
+        
+       <ImageView
+                android:id="@+id/back"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/back_selector"
+	            android:background="@drawable/null_btn_text"
+	            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/person_feedback_text_title"
+            style="@style/text_head"
+            android:layout_marginRight="50dp"
+            />
+        
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/person_feedback_text_title" 
+       android:textSize="20sp"/>
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="right">
+      <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/person_feedback_btn_order_id" 
+       android:textSize="20sp"/>
+       <TextView
+       android:id="@+id/code"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"/>
+       </LinearLayout>
+   </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp" 
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="#aaaaaa"
+    />
+    <EditText
+        android:id="@+id/feedback_content"
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:hint="@string/person_feedback_edit_contenthint" 
+       android:layout_margin="20dp"
+       android:gravity="start"
+       android:background="@color/border_gray"/>
+       <!--  <EditText
+       android:id="@+id/feedback_relate"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:singleLine="true"
+       android:hint="@string/person_feedback_edit_relatethint" 
+       android:layout_margin="20dp"
+       android:background="@color/border_gray"/> -->
+         <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/person_feedback_rating"
+       android:layout_marginLeft="20dp"
+       android:gravity="start"/>
+        <RatingBar
+       android:id="@+id/feedback_rating"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:numStars = "5" 
+       android:stepSize = "0.5" 
+       android:rating = "2" 
+       android:singleLine="true"
+       android:hint="@string/person_feedback_edit_relatethint" 
+       android:layout_margin="20dp"/>
+       <Button
+           android:id="@+id/submit" 
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_margin="20dp"
+           android:padding="10dp"
+           android:layout_gravity="right"
+           android:textColor="@color/text_white"
+           android:text="@string/person_feedback_btn_send"
+           android:background="@drawable/blue_btn_text"
+           />
+    
+</LinearLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uacent.watchapp"
+    android:versionCode="1"
+    android:versionName="@string/app_versionName">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <!-- baidu_map base permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 可选 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.providers.settings.SettingsProvider" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- baidu_map location permission -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!--
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+   </permission>
+   -->
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!-- 推送 -->
+    <permission
+        android:name="com.uacent.watchapp.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.fdcz.zsct.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <application
+        android:name="com.watch.customer.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.watch.customer.ui.FirstActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.watch.customer.ui.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.AuthLoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.AuthRegisterActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.FindPasswordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.watch.customer.ui.ShopDetailActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopDetailMsgActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopDealActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopDealDetailActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopDealResultActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopDealPayActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopDealRefundActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopDealRefundDetailActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopMapActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopListActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopSearchActivity"></activity>
+        <activity android:name="com.watch.customer.ui.SelectCityActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopBookActivity"></activity>
+        <activity
+            android:name="com.watch.customer.ui.ShopMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name="com.watch.customer.ui.ShopMenuSearchActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopMenuSumActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopMenuResultActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopMenuCommentActivity"></activity>
+        <activity android:name="com.watch.customer.ui.VipCardActivity"></activity>
+        <activity android:name="com.watch.customer.ui.OrderMainActivity"></activity>
+        <activity android:name="com.watch.customer.ui.OrderResultActivity"></activity>
+        <activity android:name="com.watch.customer.ui.OrderMenuDetailActivity"></activity>
+        <activity android:name="com.watch.customer.ui.OrderBookDetailActivity"></activity>
+        <activity android:name="com.watch.customer.ui.OrderLocalDetailActivity"></activity>
+        <activity android:name="com.watch.customer.ui.OrderDealDetailActivity"></activity>
+        <activity
+            android:name="com.watch.customer.ui.PersonInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.watch.customer.ui.PersonMainActivity"></activity>
+        <activity android:name="com.watch.customer.ui.PersonCoinActivity"></activity>
+        <activity android:name="com.watch.customer.ui.PersonShopActivity"></activity>
+        <activity android:name="com.watch.customer.ui.PersonSettingActivity"></activity>
+        <activity android:name="com.watch.customer.ui.PersonFeedbackActivity"></activity>
+        <activity
+            android:name="com.watch.customer.ui.PersonUpdatePasswordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.StaticPageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.watch.customer.ui.AboutUsActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopCommentActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopMenuAddActivity"></activity>
+        <activity android:name="com.watch.customer.ui.ShopMenuAddSumActivity"></activity>
+
+        <activity
+            android:name="com.watch.customer.ui.DeviceListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.CameraActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.LocationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.SettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.InfoActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.watch.customer.ui.BtDeviceSettingActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.watch.customer.ui.SelectPicPopupWindow"
+            android:theme="@style/MyDialogStyleBottom"></activity>
+
+        <activity
+            android:name="com.watch.customer.ui.FlashActivity"
+            android:theme="@style/MyDialogStyleBottom"></activity>
+
+        <activity
+            android:name="com.watch.customer.ui.AntiLostSettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.FindmeSettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.RingtoneSelectActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.PasswordSettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.passlock.VerifyPasswordActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.watch.customer.passlock.InputPasswordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.watch.customer.ui.MapSelectActivity"></activity>
+        <activity
+            android:name="com.watch.customer.ui.LocationRecordList"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.watch.customer.ui.MyGoogleMapActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="KF1Sp0yWSXX5mjt01kXOGDCb"></meta-data>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDQkHPE0ZM3fXVZqHRLpofT3xckmV4N2uU" />
+
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+        <!-- 极光推送 -->
+        <!-- Required SDK核心功能-->
+        <!--
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.fdcz.zsct" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- Required  SDK核心功能-->
+        <!--
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        -->
+
+        <!-- Required SDK 核心功能-->
+        <!--
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+                
+            </intent-filter>
+        </service>
+        -->
+
+        <service
+            android:name="com.watch.customer.service.UartService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <service
+            android:name="com.watch.customer.service.BleComService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <!-- Required SDK核心功能-->
+        <!--
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+             <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="com.fdcz.zsct" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+-->
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+
+        <receiver
+            android:name="com.watch.customer.ui.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.fdcz.zsct" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.watch.customer.ui.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.fdcz.zsct" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.watch.customer.receiver.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <data android:scheme="file">
+                </data>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="c3baa08a732e032d1e0cfb7e" />
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--  </>值来自开发者平台取得的AppKey-->
+    </application>
+
+</manifest>

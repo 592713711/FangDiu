@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.watch.customer.ui.CameraSurfaceView
+            android:id="@+id/camera_surfaceview"
+            android:layout_width="0dip"
+            android:layout_height="0dip" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+        <include layout="@layout/camera_flash_mode"/>
+
+        </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btn_camera_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_or_front"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp" />
+
+
+        <ImageButton
+            android:id="@+id/btn_album"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/album"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp" />
+
+        <ImageButton
+            android:id="@+id/btn_shutter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/start_take_photo"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip">
+
+        </ImageButton>
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/setting"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp" />
+
+</RelativeLayout>

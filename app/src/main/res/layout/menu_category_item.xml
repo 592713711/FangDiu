@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/category_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/menu_num_bg"
+        android:textColor="@color/text_white"
+        android:text="1" />
+    <TextView
+        android:id="@+id/category_name"
+        style="@style/text_black_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="marquee"
+        android:text="三文鱼"
+        android:layout_centerVertical="true"/>
+
+
+
+
+</LinearLayout>

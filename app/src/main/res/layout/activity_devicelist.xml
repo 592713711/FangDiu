@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/system_image_search"
+        android:background="@color/headbg"
+        android:orientation="horizontal"
+         >
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/system_image_search"
+            android:background="@drawable/search_btn_bg"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/device_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/devicelist"
+            android:textColor="@color/text_white"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            style="@style/text_head" />
+
+        <ImageView
+            android:id="@+id/testkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/system_image_search"
+            android:background="@drawable/edit_btn_bg"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:focusable="true"
+            android:clickable="true"
+            android:visibility="visible"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp">
+        </ImageView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <com.watch.customer.xlistview.SlideAndDragListView
+            android:id="@+id/devicelist"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/TextColorWhite"
+            android:divider="#dddddd"
+            android:dividerHeight="1dp">
+        </com.watch.customer.xlistview.SlideAndDragListView>
+
+    </RelativeLayout>
+</LinearLayout>

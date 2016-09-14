@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/headbg">
+
+     <ImageView
+                android:id="@+id/back"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/back_selector"
+	            android:padding="10dp"
+	            android:background="@drawable/null_btn_text"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:text="@string/shop_detail_group"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#dddddd"
+        android:layout_marginTop="2dp"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#ffffff"
+        android:padding="10dp">
+        
+        <TextView 
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="bottom"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end">
+        	<TextView 
+	            android:id="@+id/summary"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:textColor="#666666"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginStart="10dp"
+	            android:singleLine="true"
+	            android:gravity="bottom"/>
+        
+	        <View  
+			    android:layout_width="0.4dp" 
+			    android:layout_height="match_parent"
+			    android:background="#dddddd"
+			    android:layout_margin="10dp"
+			    android:layout_gravity="center_horizontal"
+			    android:gravity="end"/>
+	        
+	       <!--  <TextView 
+	            android:id="@+id/shopgrouppurchaseDistance"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:text="500m"
+	            android:textColor="#000000"
+	            android:gravity="bottom"/> -->
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#dddddd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"/>
+    
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+	        android:background="#ffffff" >
+	         <com.watch.customer.xlistview.XListView
+	           android:id="@+id/shopgrouppurchaseList"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+>
+	          </com.watch.customer.xlistview.XListView>
+         
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

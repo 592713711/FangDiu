@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/ib_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flash_auto" />
+
+    <LinearLayout
+        android:id="@+id/ll_flash_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ib_flash_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flash_auto" />
+
+        <ImageButton
+            android:id="@+id/ib_flash_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flash_off" />
+
+        <ImageButton
+            android:id="@+id/ib_flash_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/flash_on" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical">
+    
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1" >
+
+
+         <GridView
+            android:id="@+id/area_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="1" >
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/location"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shop_list_curcity"/>        
+           <TextView
+               android:id="@+id/cityname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shop_list_curcity"/>
+          <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical">   
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_list_city_exchange"/>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

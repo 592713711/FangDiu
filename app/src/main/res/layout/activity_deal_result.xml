@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/second"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/border_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/headbg" >
+
+    <ImageView
+                android:id="@+id/back"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/back_selector"
+	            android:padding="10dp"
+	            android:background="@drawable/null_btn_text"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/orderlist"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/save_head" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/text_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/personmainShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/shop_deal_detail_result_price" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/person_main_image_shop"
+                android:text="10.8元" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#aaaaaa" />
+
+        <LinearLayout
+            android:id="@+id/personmainShop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/shop_deal_detail_result_num" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/sub"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" 
+                        android:background="@drawable/sub"
+                        />
+
+                    <TextView
+                        android:id="@+id/menu_num"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/textsum_bg"
+                        android:text="1"/>
+                         <ImageView
+                        android:id="@+id/add"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/add" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#aaaaaa" />
+
+        <LinearLayout
+            android:id="@+id/personmainShop3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/shop_deal_detail_result_sum" />
+
+            <TextView
+                android:id="@+id/pricesum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/person_main_image_shop"
+                android:text="10.8元" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/shop_deal_detail_result_bindphone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/text_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/phonelin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="150****8233" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/person_main_image_shop"
+                android:text="@string/shop_deal_detail_result_bindnew" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+   <FrameLayout
+	    
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+  <LinearLayout
+	        android:id="@+id/linepop"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom"
+	        android:orientation="vertical"
+	        android:background="#a0000000"
+	        android:padding="15dp" 
+	        android:visibility="gone">
+	
+ <Button
+        android:id="@+id/zfb_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="@string/system_zfb"
+        android:textColor="@color/text_white"
+        android:gravity="center_horizontal"
+        android:background="@drawable/blue_btn_text" />
+
+   <Button
+        android:id="@+id/shibi_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:text="@string/system_shibi"
+        android:textColor="@color/text_white" 
+        android:background="@drawable/blue_btn_text"
+        android:visibility="visible"/> 
+   <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="@string/system_cancel"
+        android:textColor="@color/text_white" 
+        android:background="@drawable/blue_btn_text"
+        android:visibility="visible"/> 
+	        
+	    </LinearLayout>
+	    <Button
+        android:id="@+id/sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="bottom"
+        android:padding="10dp"
+        android:text="@string/system_sure"
+        android:textColor="@color/text_white" 
+        android:background="@drawable/blue_btn_text"
+        android:visibility="visible"/> 
+   </FrameLayout>
+
+</LinearLayout>

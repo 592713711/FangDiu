@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- system -->
+    <string name="app_name">海豚防丢</string>
+    <string name="welcome_name">海豚防丢IC卡</string>
+    <string name="device_name_limit">设备名称的长度不能超过8个字符</string>
+    <string name="system_image_back">Back</string>
+    <string name="system_image_logo">Logo</string>
+    <string name="system_image_setting">Setting</string>
+    <string name="system_image_search">Search</string>
+    <string name="system_rmb">￥</string>
+    <string name="system_zfb">Alipay</string>
+    <string name="system_bankcard">Card</string>
+    <string name="system_shibi">Shibi</string>
+    <string name="system_backmomey">Return</string>
+    <string name="system_deal">Group</string>
+    <string name="system_submit">Submit</string>
+    <string name="system_cancel">Cancel</string>
+    <string name="system_sure">Confirm</string>
+    <string name="system_sureifexit">Are you sure to exit?</string>
+    <string name="system_exit">Exit</string>
+    <string name="system_delete">Delete</string>
+    <!-- auth.login -->
+    <string name="login_edittext_phone">Phone Number</string>
+    <string name="login_edittext_password">Password</string>
+    <string name="login_button_login">Login</string>
+    <string name="login_textview_forgetpassword">Forget password？</string>
+    <string name="login_textview_register">Register</string>
+    <string name="login_success">Login success</string>
+    <!-- auth.register -->
+    <string name="register_edittext_phone">Phone number</string>
+    <string name="register_edittext_code">Verify code</string>
+    <string name="register_button_code">Get code</string>
+    <string name="register_edittext_name">Name</string>
+    <string name="register_radiobutton_sex">Sex</string>
+    <string name="register_radiobutton_man">Male</string>
+    <string name="register_radiobutton_woman">Female</string>
+    <string name="register_edittext_password">Password(6 to 12)</string>
+    <string name="register_edittext_confirm_password">Confirm password</string>
+    <string name="register_button_register">Register</string>
+    <string name="register_textview_warning">Registering means you are agree with</string>
+    <string name="register_textview_protocol">  <a href="">the user protocol.</a></string>
+    <string name="register_protocol">user protocol</string>
+    <string name="str_get_code">get code</string>
+
+    <!-- menuways -->
+    <string name="menuways_bookmenu">Menu</string>
+    <string name="menuways_shopmenu">现场点菜</string>
+    <string name="menuways_submit">提交预定</string>
+
+    <!-- main -->
+    <string name="main_tabtext_shop">店铺</string>
+    <string name="main_tabtext_order">订单</string>
+    <string name="main_tabtext_person">My</string>
+    <string name="city_select">select city</string>
+    <string name="city_unknown">Unknown</string>
+    <string name="main_tabtext_device">Device</string>
+    <string name="main_tabtext_camera">Camera</string>
+    <string name="main_tabtext_location">Location</string>
+    <string name="main_tabtext_setting">Setting</string>
+    <string name="main_tabtext_info">Info</string>
+
+    <!-- shop list -->
+    <string name="shop_list_section_discount">discount</string>
+    <string name="shop_list_section_type">type</string>
+    <string name="shop_list_section_service">service</string>
+    <string name="shop_list_image_fresh">refresh</string>
+    <string name="shop_list_curcity">current city:</string>
+    <string name="shop_list_city_exchange">switch</string>
+
+    <string-array name="discount_arr">
+        <item>99</item>
+        <item>95</item>
+        <item>90</item>
+        <item>85</item>
+        <item>80</item>
+        <item>75</item>
+        <item>70</item>
+    </string-array>
+    <string-array name="server_arr">
+        <item>预定</item>
+        <item>点餐</item>
+        <item>团购</item>
+        <item>会员卡</item>
+    </string-array>
+    <!-- shop search -->
+    <string name="shop_search_edit_hint">搜索店铺名</string>
+    <string name="shop_search_button_clear">清除所有搜索记录</string>
+
+    <!-- shop detail -->
+    <string name="shop_detail_shop_detail">店铺服务</string>
+    <string name="shop_detail_logo">Shop Logo</string>
+    <string name="shop_detail_collect">收藏</string>
+    <string name="shop_momey">元</string>
+    <string name="shop_detail_reserve">预定</string>
+    <string name="shop_detail_order">点菜</string>
+    <string name="shop_detail_group">团购</string>
+    <string name="shop_detail_card">会员优惠</string>
+    <string name="shop_detail_pay">支付</string>
+    <string name="shop_detail_comment">消费评价</string>
+    <string name="shop_detail_score">分</string>
+    <string name="shop_detail_comment_detail">【详情】</string>
+    <!-- shop detailmsg -->
+    <string name="shop_detailmsg_title">团购详情</string>
+    <string name="shop_detailmsg_time">营业时间</string>
+    <string name="shop_detailmsg_route">路线</string>
+    <string name="shop_detailmsg_tablecondition">店铺评价</string>
+    <string name="shop_detailmsg_showtable">显示所有餐台</string>
+    <string name="shop_detailmsg_shopproduce">店铺介绍</string>
+    <string name="shop_detailmsg_showdetail">显示所有</string>
+    <!-- shop map -->
+    <string name="shop_map_driving">驾车</string>
+    <string name="shop_map_bus">公交</string>
+    <string name="shop_map_walking">步行</string>
+    <string name="shop_map_noresult">抱歉，未找到结果</string>
+    <string name="shop_map_search_route">查看路线</string>
+
+    <!-- shop group purchase -->
+    <string name="shop_deal_title">团购</string>
+
+    <!-- shop group purchase detail -->
+    <string name="shop_deal_detail_title">团购详情</string>
+
+    <!-- shop group deal detail -->
+    <string name="shop_deal_detail_result_price">单价：</string>
+    <string name="shop_deal_detail_result_num">数量：</string>
+    <string name="shop_deal_detail_result_sum">总价：</string>
+    <string name="shop_deal_detail_code">团购验证码：</string>
+    <string name="shop_deal_detail_validity">有效期为：</string>
+    <string name="shop_deal_detail_result_bindphone">您绑定的手机号码</string>
+    <string name="shop_deal_detail_result_bindnew">绑定新的手机号</string>
+    <!-- shop deal refund -->
+    <string name="shop_deal_refund_ways">退款方式</string>
+    <string name="shop_deal_refund_name">姓名</string>
+    <string name="shop_deal_refund_email">邮箱</string>
+    <string name="shop_deal_refund_relateways">联系方式</string>
+    <string name="shop_deal_refund_bank">银行</string>
+    <string name="shop_deal_refund_accountbank">开户行</string>
+    <string name="shop_deal_refund_accountperson">开户人</string>
+    <!-- shop book -->
+    <string name="shop_book_personnum">人数</string>
+    <string name="shop_book_personname">姓名</string>
+    <string name="shop_book_picktime">选择时间</string>
+    <string name="shop_book_pickbooth">选择包间</string>
+    <string name="shop_book_sittype">座位类型</string>
+    <string name="shop_book_booth">包间</string>
+    <string name="shop_book_dating">大厅</string>
+    <string name="shop_book_submit">提交订单</string>
+    <string name="shop_book_yes">是</string>
+    <string name="shop_book_no">否</string>
+    <string name="shop_book_male">先生</string>
+    <string name="shop_book_female">女士</string>
+    <string name="shop_local_dialog_money">元</string>
+    <string name="shop_local_dialog_title">请输入您预订的金额：</string>
+    <string name="shop_local_dialog_title1">请输入现金金额：</string>
+    <string name="shop_local_dialog_btn">确认支付</string>
+    <!-- shop menu -->
+    <string name="shop_menu_search">搜索</string>
+    <string name="shop_menu_search_hint">想吃啥呢</string>
+    <string name="shop_menu_main">招牌菜</string>
+    <string name="shop_menu_show1">共</string>
+    <string name="shop_menu_show2">道菜</string>
+    <string name="shop_menu_submit">选好了</string>
+    <!-- shop menu -->
+    <string name="shop_menulist_releateman">订单联系人:</string>
+    <string name="shop_menulist_releateway">联系方式:</string>
+    <string name="shop_menulist_submit">提交</string>
+    <!-- shop vipcard -->
+    <string name="shop_vipcard_name">会员卡</string>
+    <!-- order main -->
+    <string name="order_main_section_record">预定</string>
+    <string name="order_main_section_order">点餐</string>
+    <string name="order_main_section_group">团购</string>
+
+    <!-- order detail -->
+    <string name="order_detail_order_title">订单详情</string>
+    <string name="order_detail_order_addmenu">加菜</string>
+    <string name="order_detail_deal_title">团购订单详情</string>
+    <string name="order_detail_refund_title">团购退款详情</string>
+    <string name="order_detail_order_number">订单号：</string>
+    <string name="order_detail_submit_time">提交时间：</string>
+    <string name="order_detail_order_dish_name">已点菜品</string>
+    <string name="order_detail_price">参考价</string>
+    <string name="order_detail_total_price">总价</string>
+    <string name="order_detail_alipay">支付宝</string>
+    <string name="order_detail_cash">现金</string>
+    <string name="order_detail_icon">食币</string>
+    <string name="order_detail_comment">评价</string>
+    <string name="order_detail_hascon">已消费</string>
+    <string name="order_detail_order_msg">预订信息</string>
+    <string name="order_detail_order_phone">联系电话</string>
+    <string name="order_detail_order_checksuc">支付成功您可以前往：</string>
+    <string name="order_detail_order_mylist">我的订单</string>
+    <string name="order_detail_order_comment">评价</string>
+    <string name="order_success">预定成功</string>
+    <string name="operate_success">操作成功</string>
+    <!-- order deal detail -->
+    <string name="order_deal_detail_order_number">订单号：</string>
+    <string name="order_deal_detail_refund_money">退款金额：</string>
+
+    <!-- person main -->
+    <string name="person_main_text_title">个人中心</string>
+    <string name="person_main_text_shop">店铺收藏</string>
+    <string name="person_main_text_mycoin">我的食币</string>
+    <string name="person_main_text_setting">设置</string>
+    <string name="person_main_text_logout">注销</string>
+    <string name="person_main_image_information">个人资料</string>
+    <string name="person_main_image_title">个人中心</string>
+    <string name="person_main_image_shop">店铺收藏</string>
+    <string name="person_main_image_mycoin">我的食币</string>
+    <string name="person_main_image_setting">设置</string>
+    <string name="person_main_image_logout">注销</string>
+
+    <!-- person information -->
+    <string name="person_information_text_title">编辑资料</string>
+    <string name="person_information_text_photo">头像</string>
+    <string name="person_information_text_telephone">手机号码</string>
+    <string name="person_information_text_name">姓名</string>
+    <string name="person_information_text_sex">性别</string>
+    <string name="person_information_text_password">修改密码</string>
+
+    <!-- person shop -->
+    <string name="person_shop_text_title">店铺收藏</string>
+
+    <!-- person mycoin -->
+    <string name="person_mycoin_text_title">我的食币</string>
+    <string name="person_mycoin_text_mycoin">您的食币为：</string>
+    <string name="person_mycoin_text_coin">币</string>
+    <string name="person_mycoin_text_deposit">充值</string>
+
+    <!-- mycoin item -->
+    <string name="mycoint_item_text1">您于</string>
+    <string name="mycoint_item_text2">充值</string>
+    <string name="mycoint_item_text3">元</string>
+    <!-- person setting -->
+    <string name="person_setting_text_title">设置</string>
+    <string name="person_setting_text_aboutus">关于我们</string>
+    <string name="person_setting_text_clean">清理缓存</string>
+    <string name="person_setting_text_advitise">意见反馈</string>
+    <string name="person_setting_text_explain">免责声明</string>
+    <string name="person_setting_text_update">版本更新</string>
+    <string name="person_setting_no_new_edtion">该版本已经是最新版</string>
+
+    <!-- person feedback -->
+    <string name="person_feedback_text_title">意见反馈</string>
+    <string name="person_feedback_edit_contenthint">请输入您的反馈意见(200字以内)</string>
+    <string name="person_feedback_rating">请选择您的评分：</string>
+    <string name="person_feedback_edit_relatethint">请输入您的邮箱和电话(选填)</string>
+    <string name="person_feedback_btn_send">发送</string>
+    <string name="person_feedback_btn_order_id">订单号：</string>
+    <!-- person updatepassword -->
+    <string name="person_password_text_title">修改密码</string>
+    <string name="person_password_text_enter">请输入新密码</string>
+    <string name="person_password_text_enteragain">请确认密码</string>
+    <string name="person_password_btn_save">保存</string>
+    <!-- refund -->
+    <!-- xlistview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- zhifubao -->
+    <string name="confirm_title">Title</string>
+    <string name="ensure">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="content_description_icon">icon</string>
+    <string name="refresh">Refresh</string>
+    <string name="processing">Loading</string>
+    <string name="download">Download</string>
+    <string name="download_fail">Download failed.</string>
+    <string name="cancel_install_msp">你已取消安装移动快捷支付服务</string>
+    <string name="cancel_install_alipay">你已取消安装支付宝钱包</string>
+    <string name="redo">retry</string>
+    <string name="install_msp">你尚未安装支付宝移动快捷支付服务，请立即安装</string>
+    <string name="install_alipay">你尚未安装支付宝钱包，请立即安装</string>
+    <string name="software_update">software update</string>
+    <string name="hide">hide</string>
+    <string name="download_success">Download new software success.</string>
+    <string name="aboutus_1">Company</string>
+    <string name="aboutus_2">Phone</string>
+    <string name="aboutus_3">掌上餐厅官网：</string>
+    <string name="submit">submit</string>
+    <string name="havepay">paid</string>
+    <string name="submit_msg">您的订单已提交，请等待商家确认，谢谢</string>
+
+    <string name="ble_not_supported">Bluetooth Low Energy not supported</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connect">Connect</string>
+    <string name="connect_success">Connect success</string>
+
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="connecting">Connecting</string>
+    <string name="alert">Alert</string>
+    <string name="stop_alert">Stop alerting</string>
+    <string name="prompt">Slide left to delete</string>
+    <!-- device list -->
+    <string name="devicelist">Device List</string>
+    <string name="name1">Test device1</string>
+    <string name="waiting">Please waiting…</string>
+
+    <string name="location">Position:</string>
+    <string name="network_error">network error</string>
+    <string name="bt_error">Please check your bluetooth device.</string>
+    <string name="lost_hist">lost history</string>
+    <string name="loc_hist">loc history</string>
+    <string name="str_no_distrub">Do Not Distrub</string>
+    <string name="str_app_password">APP Password</string>
+    <string name="str_closed">Closed</string>
+    <string name="str_user_setting">User Setting</string>
+    <string name="str_version">Version</string>
+    <string name="str_check_update">check update</string>
+    <string name="str_open">Open</string>
+    <string name="str_turn_on_pass">Turn Password On</string>
+    <string name="str_change_pass">Change Password</string>
+    <string name="str_turn_off_pass">Turn Off Password</string>
+    <string name="str_pass_error">Your password is incorrect!</string>
+    <string name="str_setup_pass">Setup Password</string>
+    <string name="str_enter_pass">Enter password</string>
+    <string name="str_welcome_back">Welcome back</string>
+    <string name="str_input_again">Your password is incorrect, input again</string>
+    <string name="str_reenter_pass">Re-enter your password</string>
+    <string name="str_no_match">Not match, try again.</string>
+
+    <string name="app_versionName" translatable="false">2.1.5</string>
+
+    <string name="str_second">second</string>
+    <string name="str_stretch">stretch</string>
+    <string name="str_camera_busy">camera is busy</string>
+    <string name="str_anti_lost">Anti lost</string>
+    <string name="str_find_me">Find me</string>
+    <string name="str_disconnect">Disconnect</string>
+    <string name="str_device_alert">Device alert</string>
+    <string name="str_light">Light</string>
+    <string name="str_phone_alert">Phone alert</string>
+    <string name="str_ringtone">Ringtone</string>
+    <string name="str_camera_setting">Camera Settings</string>
+    <string name="str_continuous">continue</string>
+    <string name="str_interval">Interval</string>
+    <string name="str_connect_first">connect device first</string>
+    <string name="str_off">Off</string>
+    <string name="str_on">On</string>
+    <string name="str_network_error">Network Error</string>
+    <string name="str_network_prompt">Please check wether the network connection is OK or not.</string>
+    <string name="str_wait_for_position">waiting for positioning!</string>
+    <string name="str_position_success">position success!</string>
+    <string name="str_login_yesorno">Want to login?</string>
+
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This app requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings..</string>
+    <string name="permission_required_toast">Location permission is required for this app.</string>
+    <string name="str_map_select">Map Select</string>
+    <string name="str_disturb_show">Waring: you will not be notified by voice if you turn on this option.</string>
+    <string name="str_bd_map">Baidu Map</string>
+    <string name="str_google_map">Google Map</string>
+    <string name="bt_not_enabled_leaving">The bluetooth device is disabled.</string>
+    <string name="str_check_sw">Checking latest software ....</string>
+    <string name="str_current_position">Current Postion</string>
+    <string name="str_gps" translatable="false">GPS</string>
+    <string name="str_bluetooth">Bluetooth</string>
+    <string name="str_camera">Camera</string>
+    <string name="str_permission_prompt">You need to grant access to </string>
+    <string name="str_permission_denied">Some Permission is Denied</string>
+    <string name="str_gallery">Gallery</string>
+    <string name="str_pic_source">Select image source</string>
+    <string name="str_sd_not_exist">The sd card dose not exist.</string>
+    <string name="str_error_condition">Error happens: it cannot be written into gallery.</string>
+    <string name="str_takephone_fail">take phone fail!</string>
+    <string name="str_boot_prompt">Boot Prompt</string>
+    <string name="str_hintboot_show">Tip: if you open the option, you will receive a prompt after the boot.</string>
+    <string name="str_haitunhint">HaiTun Hint</string>
+    <string name="str_haitunhint2">Your HaiTun is not open.</string>
+    <string name="str_touxiang_fail">权限未开启，设置头像失败</string>
+</resources>
